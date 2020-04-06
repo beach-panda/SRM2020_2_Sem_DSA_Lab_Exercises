@@ -1,5 +1,5 @@
 /*Himansh Mudigonda*/
-/*Third Program Program -> Performing arth operations using switch cases.*/
+/*Third Program -> Performing arth operations using switch cases.*/
 //including standard io
 #include <stdio.h>
 //global variables alpha and beta are the two operands
