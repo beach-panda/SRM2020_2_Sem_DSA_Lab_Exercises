@@ -1,29 +1,27 @@
 /*Himansh Mudigonda*/
-/*Tenth Program -> Feb Series.*/
+/*Eleventh Program -> Sum and Avg of digits in an array.*/
 //including standard io
 #include <stdio.h>
-//defining the level of tower here.
-#define level 4
+#define n 5
 //start of main function.
 int main() {
-    int fib[15], i, fib[0] = 0, fib[1] = 1, n = 2;
+    int my_array[n-1]; 
+    int sum;
+    double avg;
+    printf("Enter your numbers : ");
+//we have a loop here that takes the input into the array.
+    for(int i=0;i<=n-1;i++)
+        scanf("%d",&my_array[i]);
 /*
-There are 2 loops.
-The first loop does the calculation which basically include addition of two previous numbers.
-The second loop does the printing of the feb series.
+We have one loop here.
+This helps us add up all the elements in an array one after the other.
 */
-
-
-    printf("\n");
-        for (int i=n;i<=15;i++){
-        fib [i]=fib[i-1]+fib[i-2];
-        n+=1;
+    for(int i=0;i<=n-1;i++){
+        sum += my_array[i];
     }
-    printf("\n");
-    for(int i=0;i<n;++i){
-        printf("\n %d",fib[i]);
-    }
-    return 0;
+    avg = (double)sum/n; //typecasting to double...
+    printf("Sum : %d\n",sum);
+    printf("Avg : %.2lf\n",avg); 
 //return 0 if perfect.
     return 0;
 //end of program.
