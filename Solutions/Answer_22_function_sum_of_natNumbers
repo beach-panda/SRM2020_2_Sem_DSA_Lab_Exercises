@@ -1,0 +1,24 @@
+/*Himansh Mudigonda*/
+/*Twenty First Program -> Matrix addition.*/
+//including standard io
+#include <stdio.h>
+int sumNaturL();
+//start of main function.
+int main() {
+    int alpha = 0;
+    printf("Enter the tail number : ");
+    scanf("%d",&alpha);
+    sumNatural(alpha);
+//return 0 if perfect.
+    return 0;
+//end of program.
+}
+
+int sumNatural(int a) {
+    int sum = 0;
+    // natural number start with 1
+    for(int i=1;i<=a;i++){
+        sum = sum+i;
+    }
+    printf("The sum of %d numbers is : %d", a, sum);
+}
