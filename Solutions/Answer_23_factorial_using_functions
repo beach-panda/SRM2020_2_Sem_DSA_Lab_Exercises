@@ -1,0 +1,21 @@
+/*Himansh Mudigonda*/
+/*Twenty third Program -> factorial using functions.*/
+//including standard io
+#include <stdio.h>
+int fact();
+//start of main function.
+int main() {
+    int n;
+    printf("Enter the number to find the factorial : ");
+    scanf("%d",&n);
+    printf("Factorial of %d is : %d",n,factorial_of_numbers(n));
+}
+int factorial_of_numbers(int n) {
+    if(n != 1) {
+        n = n * factorial_of_numbers(n-1);
+        return n;
+    }
+    else
+        return n;
+
+}
