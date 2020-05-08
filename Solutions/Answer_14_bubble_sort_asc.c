@@ -16,7 +16,7 @@ We have one loop here.
 This helps us perform a linear search in the array(one after the other).
 */
     int i = 0, j = 0, tmp;
-    for (i = 0; i < n; i++) {   
+    for (i = 0; i < n; i++) { 
         for (j = 0; j < n - i - 1; j++) { 
             if (my_array[j] > my_array[j + 1]) { 
                 tmp = my_array[j];
