@@ -1,5 +1,5 @@
 /*Himansh Mudigonda*/
-/*Twenty First Program -> Matrix addition.*/
+/*Twenty second Program -> natural numbers addition.*/
 //including standard io
 #include <stdio.h>
 int sumNaturL();
